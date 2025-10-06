@@ -1,0 +1,3 @@
+al clonar el repositorio, verificar primero que la pc tengo node instalado.
+Luego poner npm install para instalar las dependencias del proyecto.
+para correr el proyecto  poner npm run dev.
