@@ -3,15 +3,28 @@
 <img width="1883" height="894" alt="image" src="https://github.com/user-attachments/assets/213c5c2e-af55-4ed7-97b0-a5ad3400ce1d" />
 
 ## Descripción
-En este trabajo se trata de plasmar las habilidades de cada integrante del equipo en cuanto a HTML, CSS y Javascript, ayudándonos porque tenemos diferentes niveles de conocimientos. Se trata de una **presentación interactiva** del Grupo 12, donde cada integrante diseñó su propia tarjeta personal aplicando conocimientos de **HTML, CSS y JavaScript**.  
+En este trabajo se trata de plasmar las habilidades de cada integrante del equipo en cuanto a HTML, CSS, Javascript y React, ayudándonos porque tenemos diferentes niveles de conocimientos. Se trata de una **presentación interactiva** del Grupo 12, donde cada integrante diseñó su propia tarjeta personal aplicando conocimientos de **HTML, CSS, JavaScript y React**.  
 La idea fue trabajar en equipo, compartir estilos y experimentar con diferentes efectos visuales y funcionalidades, respetando la estética retro y creativa que nos caracteriza.
 
 ## 🛠️ Tecnologías utilizadas
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+- **React**
 - **Google Fonts**
 - **Hydra-synth** (para visuales dinámicos en canvas)
+
+## 🚀 Instalación y uso
+1. Clonar este repositorio:
+   ```bash
+   git clone https://github.com/Ana-Galvez/TP2-FRONT-END.git
+2. Abrir el archivo index.html en el navegador.
+3. (Opcional) Si usás Live Server en VSCode, podés ejecutar el proyecto con recarga automática.
+
+
+
+
+//Esto sería del trabajo 1
 
 ## 📂 Estructura de archivos
 ```
