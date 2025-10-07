@@ -14,9 +14,9 @@ const Sidebar = () => {
         <li><Link to="/paginas/diagramacarpetas">Diagrama de carpetas</Link></li>
         <li><Link to="/integrantes/ana">Ana</Link></li>
         <li><Link to="/integrantes/virginia">Virginia</Link></li>
-        <li><Link to="/integrantes/tomas">Tomas</Link></li>
+        <li><Link to="/integrantes/tomas">Tomás</Link></li>
         <li><Link to="/integrantes/jessica">Jessica</Link></li>
-        <li><Link to="/integrantes/alvaro">Alvaro</Link></li>
+        <li><Link to="/integrantes/alvaro">Álvaro</Link></li>
       </ul>
     </div>
   ) 
