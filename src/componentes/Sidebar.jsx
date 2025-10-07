@@ -1,4 +1,3 @@
-import React from "react"
 import { Link } from "react-router-dom"
 import icono from '../assets/favicon.ico';
 
@@ -7,7 +6,7 @@ const Sidebar = () => {
     <div>
       <img src={icono} alt="Icono del grupo" style={{width:'50px',height:'50px'}} />
       <ul>
-        <li><Link to="/paginas/portada">Portada</Link></li>
+        <li><Link to="/">Portada</Link></li>
         <li><Link to="/paginas/bitacora">Bitacora</Link></li>
         <li><Link to="/paginas/datosarchivosjson">Datos JSON</Link></li>
         <li><Link to="/paginas/datosapi">Datos API</Link></li>

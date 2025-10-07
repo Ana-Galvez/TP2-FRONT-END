@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Sidebar from './componentes/Sidebar';
 import Portada from './paginas/Portada';
 import Bitacora from './paginas/Bitacora';
 import DatosArchivoJSON from './paginas/DatosArchivoJSON';
@@ -11,19 +10,12 @@ import Virginia from './integrantes/Virginia';
 import Tomas from './integrantes/Tomas';
 import Jessica from './integrantes/Jessica';
 import Alvaro from './integrantes/Alvaro';
-
-
-
 // import './App.css'
 
 function App() {
 
   return (
     <Router>
-      <div style={{ display: 'flex'}}>
-      
-        <Sidebar/>
-        
           <Routes>
             <Route path="/" element={<Portada />} />
             <Route path="/paginas/bitacora" element={<Bitacora/>}/>
@@ -38,7 +30,6 @@ function App() {
             <Route path="/integrantes/jessica" element={<Jessica/>}/>
             <Route path="/integrantes/alvaro" element={<Alvaro/>}/>
           </Routes>
-        </div>
     </Router>
   );
 };

@@ -1,6 +1,13 @@
+import FooterPortada from "../componentes/FooterPortada";
+import Sidebar from "../componentes/Sidebar";
+
 const Jessica = () => {
   return (
-    <div>Jessica</div>
+    <div>
+      <Sidebar/>
+      <h1>Jessica</h1>
+      <FooterPortada/>
+    </div>
   )
 }
 export default Jessica

@@ -18,8 +18,8 @@ La idea fue trabajar en equipo, compartir estilos y experimentar con diferentes 
 1. Clonar este repositorio:
    ```bash
    git clone https://github.com/Ana-Galvez/TP2-FRONT-END.git
-2. Abrir el archivo index.html en el navegador.
-3. (Opcional) Si usás Live Server en VSCode, podés ejecutar el proyecto con recarga automática.
+2. Poner este comando  npm install  para instalar todas las dependencias
+3. Poner este comando npm run dev  para correr el proyecto en modo desarrollador, creando un servidor local.
 
 
 
