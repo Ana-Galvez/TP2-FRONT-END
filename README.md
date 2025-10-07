@@ -3,13 +3,11 @@
 <img width="1883" height="894" alt="image" src="https://github.com/user-attachments/assets/213c5c2e-af55-4ed7-97b0-a5ad3400ce1d" />
 
 ## Descripción
-En este trabajo se trata de plasmar las habilidades de cada integrante del equipo en cuanto a HTML, CSS, Javascript y React, ayudándonos porque tenemos diferentes niveles de conocimientos. Se trata de una **presentación interactiva** del Grupo 12, donde cada integrante diseñó su propia tarjeta personal aplicando conocimientos de **HTML, CSS, JavaScript y React**.  
+En este trabajo se trata de plasmar las habilidades de cada integrante del equipo en cuanto a React, ayudándonos porque tenemos diferentes niveles de conocimientos. Se trata de una **presentación interactiva** del Grupo 12, donde cada integrante diseñó su propia tarjeta personal aplicando conocimientos de **React**.  
 La idea fue trabajar en equipo, compartir estilos y experimentar con diferentes efectos visuales y funcionalidades, respetando la estética retro y creativa que nos caracteriza.
+Lo importante es el uso de componentes reutilizables con y sin props, como el uso de useState y useEffect, a eso le sumamos el React Router.
 
 ## 🛠️ Tecnologías utilizadas
-- **HTML5**
-- **CSS3**
-- **JavaScript**
 - **React**
 - **Google Fonts**
 - **Hydra-synth** (para visuales dinámicos en canvas)
