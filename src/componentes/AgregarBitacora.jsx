@@ -29,7 +29,7 @@ const AgregarBitacora = ({ itemsIniciales }) => {
   });
 
   return (
-    <div>
+    <>
       <ul className="">
         {items.map((item, index) => (
           <li key={index} style={{ marginBottom: "8px" }}>
@@ -56,7 +56,7 @@ const AgregarBitacora = ({ itemsIniciales }) => {
           Agregar
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

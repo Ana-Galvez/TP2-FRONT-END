@@ -20,13 +20,13 @@ const Bitacora = () => {
   ];
 
   return (
-    <div>
+    <>
       <Sidebar/>
       <HeaderPortadaBitacora
        titulo="Bitácora"/>
       <AgregarBitacora itemsIniciales={bitacoraItems}/>
       <FooterPortada/>
-    </div>
+    </>
   )
 }
 export default Bitacora

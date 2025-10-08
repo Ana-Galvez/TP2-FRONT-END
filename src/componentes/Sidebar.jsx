@@ -12,7 +12,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
+    <nav>
       <img src={icono} alt="Icono del grupo" style={{width:'50px',height:'50px'}} />
       <ul>
         <li><Link to="/">Portada</Link></li>
@@ -54,7 +54,7 @@ const Sidebar = () => {
             </ul>
           )}
       </ul>
-    </div>
+    </nav>
   ) 
 }
 export default Sidebar
