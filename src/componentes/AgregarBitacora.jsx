@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const AgregarBitacora = ({ itemsIniciales }) => {
   const STORAGE_KEY = "bitacora-items";
@@ -23,10 +23,10 @@ const AgregarBitacora = ({ itemsIniciales }) => {
     setNuevoItem("");
   };
 
-  const handleBorrar = (index) => {
+  const handleBorrar = useCallback((index) => {
     const nuevaLista = items.filter((_, i) => i !== index);
     setItems(nuevaLista);
-  };
+  });
 
   return (
     <div>

@@ -10,7 +10,7 @@ const Bitacora = () => {
     "Uso de variables en CSS para colores.",
     "Uso de hover, transform, linear gradient, box-shadow, etc.",
     "Componentes reutilizables con y sin props",
-    "Uso de useState y useEffect",
+    "Uso de useState, useEffect y useCallback",
     "Utilización de React Router",
     "Funcionalidades de React como dar opción Modo Oscuro, filtro por integrantes, agregado de lista, alert, etc.",
     "Se agregó ícono de toda la página.",
