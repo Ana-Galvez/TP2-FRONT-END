@@ -5,7 +5,7 @@
 ## Descripción
 En este trabajo se trata de plasmar las habilidades de cada integrante del equipo en cuanto a React, ayudándonos porque tenemos diferentes niveles de conocimientos. Se trata de una **presentación interactiva** del Grupo 12, donde cada integrante diseñó su propia tarjeta personal aplicando conocimientos de **React**.  
 La idea fue trabajar en equipo, compartir estilos y experimentar con diferentes efectos visuales y funcionalidades, respetando la estética retro y creativa que nos caracteriza.
-Lo importante es el uso de componentes reutilizables con y sin props, como el uso de useState y useEffect, a eso le sumamos el React Router.
+Lo importante es el uso de componentes reutilizables con y sin props, como el uso de useState, useCallback y useEffect, a eso le sumamos el React Router.
 
 ## 🛠️ Tecnologías utilizadas
 - **React**
