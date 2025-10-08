@@ -4,7 +4,7 @@ import Sidebar from "../componentes/Sidebar";
 import AgregarBitacora from "../componentes/AgregarBitacora";
 
 const Bitacora = () => {
-    const bitacoraItems = [
+  const bitacoraItems = [
     "Definimos usar el esquema principal para todas las páginas, aunque podemos hacer cambios. Esto fue lo que nos llevó un poco de tiempo decidir.",
     "Google Fonts generales: Inter, Press Start 2P y Space Mono.",
     "Uso de variables en CSS para colores.",
@@ -21,12 +21,11 @@ const Bitacora = () => {
 
   return (
     <>
-      <Sidebar/>
-      <HeaderPortadaBitacora
-       titulo="Bitácora"/>
-      <AgregarBitacora itemsIniciales={bitacoraItems}/>
-      <FooterPortada/>
+      <Sidebar />
+      <HeaderPortadaBitacora titulo="Bitácora" />
+      <AgregarBitacora itemsIniciales={bitacoraItems} />
+      <FooterPortada />
     </>
-  )
-}
-export default Bitacora
+  );
+};
+export default Bitacora;
