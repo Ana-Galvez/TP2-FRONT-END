@@ -1,5 +1,5 @@
-import Footer from "../componentes/Footer";
 import Sidebar from "../componentes/Sidebar";
+import Footer from "../componentes/Footer";
 
 const Tomas = () => {
   return (
