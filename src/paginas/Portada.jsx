@@ -16,8 +16,10 @@ const Portada = () => {
   const portadaItems = [
     "Navegación clara con Sidebar (Portada / Bitácora / Datos JSON / Datos API / Árbol de renderizado / Diagrama de Carpetas / Integrantes (Ana/ Virginia/ Tomás/ Jessica/ Álvaro)).",
     "Diseño responsive con breakpoints en 400px, 900px y 1200px.",
-    "Portada en Portada.jsx, carpeta integrantes donde hablamos de cada uno, carpeta componenetes donde se encuentran componentes reutilizables y carpeta paginas donde se encuentran todos los jsx que aparecen en el Sidebar.",
+    "Portada en Portada.jsx, carpeta integrantes donde hablamos de cada uno, carpeta componentes donde se encuentran componentes reutilizables y carpeta paginas donde se encuentran todos los jsx que aparecen en el Sidebar.",
     "Sección Bitácora con decisiones, dificultades y cambios.",
+    "Sección Datos JSON donde se muestran los datos de un archivo JSON.",
+    "Sección Datos API donde se muestran los datos de una API pública.",
     "Tipografías de Google Fonts y estilos consistentes.",
   ];
   
