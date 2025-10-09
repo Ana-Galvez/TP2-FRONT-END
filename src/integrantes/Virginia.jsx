@@ -4,6 +4,7 @@ import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import Footer from "../componentes/Footer";
 import Habilidadades from "../componentes/Habilidadades";
+import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 
 const Virginia = () => {
   return (
@@ -32,6 +33,14 @@ const Virginia = () => {
             <li>Trabajo en equipo</li>
           </ul>
       </Habilidadades>
+      <PeliculasFavoritas>
+        <h2>Películas </h2>
+        <ul id="peli-list">
+          <li>🎬 Back to the Future</li>
+          <li>🎬 Tron</li>
+          <li>🎬 Ready Player One</li>
+        </ul>
+      </PeliculasFavoritas>
       <Footer>
         <p>© 2025 Grupo 12 — <Link to="/paginas/bitacora">Bitacora</Link></p>
       </Footer>

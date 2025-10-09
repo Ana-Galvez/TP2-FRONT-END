@@ -2,6 +2,7 @@ import imgJessica from "../assets/jes.png";
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import Footer from "../componentes/Footer";
+import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 
 const Jessica = () => {
   return (
@@ -22,6 +23,15 @@ const Jessica = () => {
         </ul>
         <button>Mostrar/Ocultar</button>
       </HeaderIntegrantes>
+      <PeliculasFavoritas>
+        <h2>Películas favoritas</h2>
+        <ul id="Movies-list">
+          <li>En busca de la felicidad</li>
+          <li>La vida es bella</li>
+          <li>Cadena de favores</li>
+        </ul>
+        <button>Mostrar/Ocultar</button>
+      </PeliculasFavoritas>
       <Footer>
         <p>© 2025 Jessica Oleszuk | Grupo 12 - Front End</p>
       </Footer>

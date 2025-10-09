@@ -6,6 +6,7 @@ import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import Footer from "../componentes/Footer";
 import Habilidadades from "../componentes/Habilidadades";
+import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 
 const Ana = () => {
 
@@ -35,6 +36,11 @@ const Ana = () => {
          </ul>
         <button>Mostrar/Ocultar</button>  
       </Habilidadades>
+      <PeliculasFavoritas>
+        <h2>Películas favoritas</h2>
+        <ul id="movies-list"><li>Titanic</li><li>Pasajeros</li><li>Diario de una pasión</li></ul>
+        <button>Mostrar/Ocultar</button>
+      </PeliculasFavoritas>
       <Footer> 
         <p>
           © 2025 Equipo Retro Front End Grupo 12 —{" "}
