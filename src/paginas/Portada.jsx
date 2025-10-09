@@ -5,8 +5,9 @@ import jessicaImg from "../assets/jes.png";
 import tomasImg from "../assets/tomas.png";
 import virginiaImg from "../assets/vir.png";
 import { useState } from "react";
-import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
+import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
+import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
 import TarjetaIntegrante from "../componentes/TarjetaIntegrante";
 import FooterPortada from "../componentes/FooterPortada";
 
@@ -18,6 +19,16 @@ const Portada = () => {
     "Sección Bitácora con decisiones, dificultades y cambios.",
     "Tipografías de Google Fonts y estilos consistentes.",
   ];
+  
+  // Estado del Modo
+  const [isDark, setIsDark] = useState(false);
+    const toggleTheme = () => {
+    setIsDark(prevIsDark => !prevIsDark);
+  };
+    const themeStyles = {
+    backgroundColor: isDark ? 'black' : 'white',
+    color: isDark ? 'white' : 'black',
+  };
 
   // Estado del filtro
   const [filtro, setFiltro] = useState("");
@@ -42,7 +53,8 @@ const Portada = () => {
   );
 
   return (
-    <>
+    <div style={themeStyles}>
+      <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
       <Sidebar />
       <HeaderPortadaBitacora
         titulo="Proyecto Web - Grupo 12 🎮"
@@ -96,7 +108,7 @@ const Portada = () => {
         </div>
       </section>
       <FooterPortada />
-    </>
+    </div>
   );
 };
 export default Portada;

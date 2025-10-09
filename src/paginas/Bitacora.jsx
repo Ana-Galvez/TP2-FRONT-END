@@ -1,7 +1,9 @@
-import FooterPortada from "../componentes/FooterPortada";
-import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
+import { useState } from "react";
+import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
+import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
 import AgregarBitacora from "../componentes/AgregarBitacora";
+import FooterPortada from "../componentes/FooterPortada";
 
 const Bitacora = () => {
   const bitacoraItems = [
@@ -19,13 +21,24 @@ const Bitacora = () => {
     "Implementación del proyecto en Vercel importando el repositorio de GitHub.",
   ];
 
+  // Estado del Modo
+const [isDark, setIsDark] = useState(false);
+  const toggleTheme = () => {
+  setIsDark(prevIsDark => !prevIsDark);
+};
+  const themeStyles = {
+  backgroundColor: isDark ? 'black' : 'white',
+  color: isDark ? 'white' : 'black',
+};
+
   return (
-    <>
+    <div style={themeStyles}>
+      <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
       <Sidebar />
       <HeaderPortadaBitacora titulo="Bitácora" />
       <AgregarBitacora itemsIniciales={bitacoraItems} />
       <FooterPortada />
-    </>
+    </div>
   );
 };
 export default Bitacora;
