@@ -5,11 +5,12 @@ import jessicaImg from "../assets/jes.png";
 import tomasImg from "../assets/tomas.png";
 import virginiaImg from "../assets/vir.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
 import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
 import TarjetaIntegrante from "../componentes/TarjetaIntegrante";
-import FooterPortada from "../componentes/FooterPortada";
+import Footer from "../componentes/Footer";
 
 const Portada = () => {
   const portadaItems = [
@@ -107,7 +108,13 @@ const Portada = () => {
           )}
         </div>
       </section>
-      <FooterPortada />
+      <Footer> 
+        <p>
+          © 2025 Equipo Retro Front End Grupo 12 —{" "}
+          <Link to="/paginas/bitacora">Bitacora</Link> 
+        </p>
+        <p>Insert Coin 💾</p>
+      </Footer>
     </div>
   );
 };

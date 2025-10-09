@@ -1,4 +1,4 @@
-import FooterPortada from "../componentes/FooterPortada";
+import Footer from "../componentes/Footer";
 import Sidebar from "../componentes/Sidebar";
 
 const Ana = () => {
@@ -6,7 +6,7 @@ const Ana = () => {
     <>
       <Sidebar/>
       <h1>Ana</h1>
-      <FooterPortada/>
+      <Footer/>
     </>
   );
 };

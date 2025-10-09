@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
-const FooterPortada = () => {
+const Footer = ({children}) => {
+
+  const footerRef = useRef(null); 
   // Función para activar el modo secreto
   useEffect(() => {
     const handleFooterClick = () => {
       alert("🎮 ¡Modo secreto activado! Gracias por visitar nuestra web. 😁");
     };
 
-    const footerElemento = document.querySelector("footer");
+    const footerElemento = footerRef.current;
 
     if (footerElemento) {
       footerElemento.addEventListener("click", handleFooterClick);
@@ -21,13 +22,15 @@ const FooterPortada = () => {
   }, []);
 
   return (
-    <footer className="footer">
+    <footer className="footer" ref={footerRef}>
+      {children}
+{/* 
       <p>
         © 2025 Equipo Retro Front End Grupo 12 —{" "}
         <Link to="/paginas/bitacora">Bitacora</Link>
       </p>
-      <p>Insert Coin 💾</p>
+      <p>Insert Coin 💾</p> */}
     </footer>
   );
 };
-export default FooterPortada;
+export default Footer;

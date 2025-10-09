@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
-import FooterPortada from "../componentes/FooterPortada";
+import Footer from "../componentes/Footer";
 
 const DiagramaCarpetas = () => {
 
@@ -19,8 +20,14 @@ const [isDark, setIsDark] = useState(false);
     <div style={themeStyles}>
       <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
       <Sidebar/>
-      <h1>Diagrama de Carpetas</h1>
-      <FooterPortada/>
+    <h1>Diagrama de Carpetas</h1>
+    <Footer> 
+      <p>
+        © 2025 Equipo Retro Front End Grupo 12 —{" "}
+        <Link to="/paginas/bitacora">Bitacora</Link> 
+      </p>
+      <p>Insert Coin 💾</p>
+    </Footer>
     </div>
   )
 }

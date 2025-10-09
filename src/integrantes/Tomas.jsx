@@ -1,4 +1,4 @@
-import FooterPortada from "../componentes/FooterPortada";
+import Footer from "../componentes/Footer";
 import Sidebar from "../componentes/Sidebar";
 
 const Tomas = () => {
@@ -6,7 +6,7 @@ const Tomas = () => {
     <>
       <Sidebar/>
       <h1>Tomas</h1>
-      <FooterPortada/>
+      <Footer/>
     </>
   )
 }

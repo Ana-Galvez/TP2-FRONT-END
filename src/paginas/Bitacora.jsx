@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
 import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
 import AgregarBitacora from "../componentes/AgregarBitacora";
-import FooterPortada from "../componentes/FooterPortada";
+import Footer from "../componentes/Footer";
 
 const Bitacora = () => {
   const bitacoraItems = [
@@ -37,7 +38,17 @@ const [isDark, setIsDark] = useState(false);
       <Sidebar />
       <HeaderPortadaBitacora titulo="Bitácora" />
       <AgregarBitacora itemsIniciales={bitacoraItems} />
-      <FooterPortada />
+      <Footer>
+        <p>
+          © 2025 Equipo Retro Front End Grupo 12 — 
+          <Link to="/integrantes/tomas">Tomás</Link> - 
+          <Link to="/integrantes/virginia">Virginia</Link> - 
+          <Link to="/integrantes/jessica">Jessica</Link> - 
+          <Link to="/integrantes/alvaro">Álvaro</Link> - 
+          <Link to="/integrantes/ana">Ana</Link>
+        </p>
+        <p>Insert Coin 💾</p>
+      </Footer>
     </div>
   );
 };

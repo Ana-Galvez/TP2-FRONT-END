@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
-import FooterPortada from "../componentes/FooterPortada";
+import Footer from "../componentes/Footer";
 
 const DatosAPI = () => {
   // Estado del Modo
@@ -19,7 +20,13 @@ const DatosAPI = () => {
       <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
       <Sidebar/>
       <h1>Datos de la API</h1>
-      <FooterPortada/>
+      <Footer> 
+        <p>
+          © 2025 Equipo Retro Front End Grupo 12 —{" "}
+          <Link to="/paginas/bitacora">Bitacora</Link> 
+        </p>
+        <p>Insert Coin 💾</p>
+      </Footer>
     </div>
   )
 }
