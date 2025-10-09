@@ -1,11 +1,11 @@
 import { useRef } from "react";
 
-const PeliculasFavoritas = ({children}) => {
+const Musica = ({children}) => {
   const sectionRef = useRef(null); 
   return (
-    <section  ref={sectionRef}>
+    <section ref={sectionRef}>
       {children}
     </section>
   )
 }
-export default PeliculasFavoritas
+export default Musica

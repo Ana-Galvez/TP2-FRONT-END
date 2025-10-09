@@ -7,6 +7,7 @@ import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import Footer from "../componentes/Footer";
 import Habilidadades from "../componentes/Habilidadades";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
+import Musica from "../componentes/Musica";
 
 const Ana = () => {
 
@@ -41,6 +42,11 @@ const Ana = () => {
         <ul id="movies-list"><li>Titanic</li><li>Pasajeros</li><li>Diario de una pasión</li></ul>
         <button>Mostrar/Ocultar</button>
       </PeliculasFavoritas>
+      <Musica>
+        <h2 >Música / Discos favoritos</h2>
+        <ul id="music-list"><li>Celine Dion</li><li>Ha*Ash</li><li>Chayanne</li></ul>
+        <button>Mostrar/Ocultar</button>
+      </Musica>
       <Footer> 
         <p>
           © 2025 Equipo Retro Front End Grupo 12 —{" "}

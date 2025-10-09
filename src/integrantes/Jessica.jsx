@@ -3,6 +3,7 @@ import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import Footer from "../componentes/Footer";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
+import Musica from "../componentes/Musica";
 
 const Jessica = () => {
   return (
@@ -32,6 +33,15 @@ const Jessica = () => {
         </ul>
         <button>Mostrar/Ocultar</button>
       </PeliculasFavoritas>
+      <Musica>
+        <h2>Música favorita</h2>
+        <ul id="Music-list">
+          <li>Maria Becerra</li>
+          <li>Tan Bionica</li>
+          <li>Miranda</li>
+        </ul>
+        <button>Mostrar/Ocultar</button>
+      </Musica>
       <Footer>
         <p>© 2025 Jessica Oleszuk | Grupo 12 - Front End</p>
       </Footer>

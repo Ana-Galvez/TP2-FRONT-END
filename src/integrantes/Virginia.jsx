@@ -5,6 +5,7 @@ import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import Footer from "../componentes/Footer";
 import Habilidadades from "../componentes/Habilidadades";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
+import Musica from "../componentes/Musica";
 
 const Virginia = () => {
   return (
@@ -41,6 +42,14 @@ const Virginia = () => {
           <li>🎬 Ready Player One</li>
         </ul>
       </PeliculasFavoritas>
+      <Musica>
+        <h2>Música</h2>
+        <ul id="musica-list">
+          <li>🎵 Vangelis: Chariots Of Fire</li>
+          <li>🎵 Electric Light Orchestra: Time</li>
+          <li>🎵 Pet Shop Boys: Always On My Mind</li>
+        </ul>
+      </Musica>
       <Footer>
         <p>© 2025 Grupo 12 — <Link to="/paginas/bitacora">Bitacora</Link></p>
       </Footer>
