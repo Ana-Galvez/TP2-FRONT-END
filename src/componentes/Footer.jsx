@@ -24,12 +24,6 @@ const Footer = ({children}) => {
   return (
     <footer className="footer" ref={footerRef}>
       {children}
-{/* 
-      <p>
-        © 2025 Equipo Retro Front End Grupo 12 —{" "}
-        <Link to="/paginas/bitacora">Bitacora</Link>
-      </p>
-      <p>Insert Coin 💾</p> */}
     </footer>
   );
 };
