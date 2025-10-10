@@ -1,8 +1,12 @@
 import { useRef } from "react";
-const Habilidades = ({children}) => {
+import MostrarOcultar from "./MostrarOcultar";
+
+const Habilidades = ({lista,children}) => {
   const sectionRef = useRef(null);
   return (
     <section ref={sectionRef}>
+      <MostrarOcultar titulo="Habilidades"/>
+      {lista}
       {children}
     </section>
   )

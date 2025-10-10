@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro"
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
-import Habilidades from "../componentes/Habilidades";
-import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
-import Musica from "../componentes/Musica";
+import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
 
 const Ana = () => {
@@ -30,23 +28,17 @@ const Ana = () => {
           <p>Ubicación: La Matanza | Edad: 43</p>
           <img src={imgAna} alt="Imagen de ana"></img>
       </HeaderIntegrantes>
-      <Habilidades>
-        <h2>Habilidades</h2>
+      <MostrarOcultar titulo="Habilidades">
         <ul id="skills-list">
           <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Colaborativa</li><li>Proactiva</li>
-         </ul>
-        <button>Mostrar/Ocultar</button>  
-      </Habilidades>
-      <PeliculasFavoritas>
-        <h2>Películas favoritas</h2>
+        </ul>
+      </MostrarOcultar>
+      <MostrarOcultar titulo="Películas favoritas">
         <ul id="movies-list"><li>Titanic</li><li>Pasajeros</li><li>Diario de una pasión</li></ul>
-        <button>Mostrar/Ocultar</button>
-      </PeliculasFavoritas>
-      <Musica>
-        <h2 >Música / Discos favoritos</h2>
+      </MostrarOcultar>
+      <MostrarOcultar titulo="Música / Discos favoritos">
         <ul id="music-list"><li>Celine Dion</li><li>Ha*Ash</li><li>Chayanne</li></ul>
-        <button>Mostrar/Ocultar</button>
-      </Musica>
+      </MostrarOcultar>
       <Footer> 
         <p>
           © 2025 Equipo Retro Front End Grupo 12 —{" "}
