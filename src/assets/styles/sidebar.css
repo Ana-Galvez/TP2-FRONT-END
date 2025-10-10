@@ -1,0 +1,149 @@
+/* ======== SIDEBAR BASE ======== */
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* ======== BOTÓN HAMBURGUESA ======== */
+.sidebar-toggle-btn {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #1e1e2f;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* ======== CABECERA ======== */
+.sidebar-header {
+  margin-bottom: 30px;
+}
+
+.sidebar-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+/* ======== MENÚ PRINCIPAL ======== */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-menu li {
+  width: 100%;
+}
+
+.sidebar-menu a,
+.submenu-toggle {
+  display: block;
+  width: 90%;
+  padding: 12px 10px;
+  color: #cfcfcf;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.sidebar-menu a:hover,
+.submenu-toggle:hover {
+  background-color: #2a2a40;
+  color: #ffffff;
+  width: 80%;
+}
+
+/* ======== SUBMENÚ ======== */
+.submenu {
+  list-style: none;
+  padding-left: 25px;
+  background-color: #2a2a40;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: #d1d1d1;
+}
+
+.submenu li a:hover {
+  background-color: #3b3b60;
+  color: #ffffff;
+}
+
+/* ======== BREAKPOINTS ======== */
+
+/* --- Pantallas grandes (>1200px) --- */
+@media (min-width: 1200px) {
+  .sidebar {
+    font-size: 1rem;
+  }
+  .sidebar-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* --- Tablets / medianas (≤900px) --- */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 180px;
+  }
+  .sidebar-menu a,
+  .submenu-toggle {
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+  .sidebar-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* --- Celulares pequeños (≤400px) --- */
+@media (max-width: 400px) {
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease;
+    width: 250px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-toggle-btn {
+    display: block;
+  }
+
+  /* Ocultar texto si querés versión ultra compacta */
+  .sidebar-menu a,
+  .submenu-toggle {
+    font-size: 1rem;
+  }
+}
