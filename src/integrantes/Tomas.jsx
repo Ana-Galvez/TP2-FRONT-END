@@ -5,6 +5,7 @@ import Habilidades from "../componentes/Habilidades";
 import Idiomas from "../componentes/Idiomas";
 import Footer from "../componentes/Footer";
 import Educacion from "../componentes/Educacion";
+import SobreMi from "../componentes/SobreMi";
 
 const Tomas = () => {
   return (
@@ -15,6 +16,14 @@ const Tomas = () => {
         <p>Ubicación: Ciudad Autonoma de Buenos Aires | Edad: 22</p>
         <img src={imgTomas} alt="Avatar Tomas" id="tomas-avatar"></img>
       </HeaderIntegrantes>
+      <SobreMi
+        titulo="Sobre mi"
+        descripcion="Soy Tomas Julian Resquin, trabajo en el área de la educación técnica y en el desarrollo de sistemas para
+        la gestión educativa. Estoy aprendiendo y formándome en programación, bases de datos, ciberseguridad y
+        software libre, con el objetivo de integrar estas temáticas en distintos proyectos laborales y
+        personales. Mi meta es seguir creciendo y optimizando mis métodos de trabajo, combinando práctica y
+        tecnología de manera sencilla y útil."
+      />
       <Habilidades>
         <h3>Habilidades</h3>
         <div>

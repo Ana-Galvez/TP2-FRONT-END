@@ -5,6 +5,7 @@ import Habilidades from "../componentes/Habilidades";
 import Footer from "../componentes/Footer";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 import Musica from "../componentes/Musica";
+import SobreMi from "../componentes/SobreMi";
 
 const Jessica = () => {
   return (
@@ -15,6 +16,10 @@ const Jessica = () => {
         <h1>Jessica Oleszuk</h1>
         <p> Tucumán | Edad: 38 </p>
       </HeaderIntegrantes>
+      <SobreMi
+        titulo="Sobre mi"
+        descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
+      />
       <Habilidades>
         <h2>Habilidades</h2>
         <ul id="skills-list">

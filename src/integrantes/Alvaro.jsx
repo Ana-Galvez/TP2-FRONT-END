@@ -5,6 +5,7 @@ import Habilidades from "../componentes/Habilidades";
 import Idiomas from "../componentes/Idiomas";
 import Educacion from "../componentes/Educacion";
 import Footer from "../componentes/Footer";
+import SobreMi from "../componentes/SobreMi";
 
 const Alvaro = () => {
   return (
@@ -15,6 +16,13 @@ const Alvaro = () => {
           <p> Ubicación: Córdoba, Argentina | Edad: 30</p>
           <img src={imgAlvaro} alt="Avatar Alvaro" id="alvaro-avatar"></img>
       </HeaderIntegrantes>
+      <SobreMi
+        titulo="Sobre mí"
+        descripcion="Hooola que tal? Mi nombre es Alvaro Coronel, soy Quality Engineer de día, prácticante de Biotecnología por la tarde, y estudiante Desarrollo de Software por la noche.
+        Me interesa la Bioinformática y la Ingeniería de datos, y pretendo converger mis estudios y conocimientos en el desarrollo de modelos predictivos
+        aplicados en el desarrollo de proteínas prometedoras para mejorar la calidad de vida de las personas. Lograremos una espectativa de vida de 150 años? Solo Skynet y Sarah Conor lo saben.
+        Soy Santiagueño, adicto al mate y pretendo otrabajar en equipo aunque a veces no me dan los tiempos ni si quiera para cocinarme un guiso... Ampliaremos."
+      />
       <Habilidades>
         <h3>Habilidades</h3>
         <div>
