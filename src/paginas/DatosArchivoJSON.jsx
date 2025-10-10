@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
+import LectorLibros from "../componentes/LectorLibros";
 import Footer from "../componentes/Footer";
 
 const DatosArchivoJSON = () => {
@@ -19,7 +20,7 @@ const [isDark, setIsDark] = useState(false);
     <div style={themeStyles}>
       <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
       <Sidebar/>
-      <h1>Datos del Archivo JSON</h1>
+      <LectorLibros/>
       <Footer> 
         <p>
           © 2025 Equipo Retro Front End Grupo 12 —{" "}
