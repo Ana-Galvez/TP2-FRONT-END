@@ -13,21 +13,21 @@ const Virginia = () => {
       <Sidebar/>
       <HeaderIntegrantes>
           <h1>Virginia</h1>
-          <ul class="facts">
+          <ul>
             <li>📍 Bahía Blanca</li>
             <li>🎂 41 años</li>
           </ul>
-          <div class="badges mt-2">
-            <span class="badge c1">HTML</span>
-            <span class="badge c2">CSS</span>
-            <span class="badge c3">JavaScript</span>
-            <span class="badge c4">Trabajo en equipo</span>
+          <div >
+            <span >HTML</span>
+            <span >CSS</span>
+            <span >JavaScript</span>
+            <span >Trabajo en equipo</span>
           </div>
-          <img src={imgVirginia}alt="Avatar de Virginia" class="avatar-right" />
+          <img src={imgVirginia}alt="Avatar de Virginia"/>
       </HeaderIntegrantes>
       <Habilidades>
           <h2>Habilidades</h2>
-          <ul id="skills-list" class="skills">
+          <ul id="skills-list">
             <li>HTML semántico</li>
             <li>CSS (responsive)</li>
             <li>JavaScript</li>

@@ -11,9 +11,9 @@ const Jessica = () => {
     <>
       <Sidebar/>
       <HeaderIntegrantes>
-        <img src={imgJessica} alt="Avatar Jessica" class="avatar" />
+        <img src={imgJessica} alt="Avatar Jessica"/>
         <h1>Jessica Oleszuk</h1>
-        <p class="info"> Tucumán | Edad: 38 </p>
+        <p> Tucumán | Edad: 38 </p>
       </HeaderIntegrantes>
       <Habilidades>
         <h2>Habilidades</h2>
