@@ -6,7 +6,6 @@
     "genero": "Realismo Mágico",
     "año_publicacion": 1967,
     "paginas": 432,
-    "disponible": true,
     "idioma": "Español"
   },
   {
@@ -16,7 +15,6 @@
     "genero": "Distopía",
     "año_publicacion": 1949,
     "paginas": 328,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -26,7 +24,6 @@
     "genero": "Romance Clásico",
     "año_publicacion": 1813,
     "paginas": 400,
-    "disponible": false,
     "idioma": "Inglés"
   },
   {
@@ -36,7 +33,6 @@
     "genero": "Fantasía Épica",
     "año_publicacion": 1954,
     "paginas": 423,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -46,7 +42,6 @@
     "genero": "Ficción Filosófica",
     "año_publicacion": 1866,
     "paginas": 671,
-    "disponible": true,
     "idioma": "Ruso"
   },
   {
@@ -56,7 +51,6 @@
     "genero": "Experimental",
     "año_publicacion": 1963,
     "paginas": 640,
-    "disponible": true,
     "idioma": "Español"
   },
   {
@@ -66,7 +60,6 @@
     "genero": "Drama Social",
     "año_publicacion": 1960,
     "paginas": 281,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -76,7 +69,6 @@
     "genero": "Sátira",
     "año_publicacion": 1605,
     "paginas": 1056,
-    "disponible": true,
     "idioma": "Español"
   },
   {
@@ -86,7 +78,6 @@
     "genero": "Fábula",
     "año_publicacion": 1943,
     "paginas": 96,
-    "disponible": true,
     "idioma": "Francés"
   },
   {
@@ -96,7 +87,6 @@
     "genero": "Ciencia Ficción",
     "año_publicacion": 1965,
     "paginas": 412,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -106,7 +96,6 @@
     "genero": "Ficción Distópica",
     "año_publicacion": 1995,
     "paginas": 347,
-    "disponible": true,
     "idioma": "Portugués"
   },
   {
@@ -116,7 +105,6 @@
     "genero": "Ficción Espiritual",
     "año_publicacion": 1922,
     "paginas": 152,
-    "disponible": false,
     "idioma": "Alemán"
   },
   {
@@ -126,7 +114,6 @@
     "genero": "Misterio",
     "año_publicacion": 2001,
     "paginas": 558,
-    "disponible": true,
     "idioma": "Español"
   },
   {
@@ -136,7 +123,6 @@
     "genero": "Aventura Juvenil",
     "año_publicacion": 2008,
     "paginas": 374,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -146,7 +132,6 @@
     "genero": "Terror Gótico",
     "año_publicacion": 1897,
     "paginas": 418,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -156,7 +141,6 @@
     "genero": "Novela de Formación",
     "año_publicacion": 1868,
     "paginas": 472,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -166,7 +150,6 @@
     "genero": "Novela Negra",
     "año_publicacion": 1981,
     "paginas": 120,
-    "disponible": false,
     "idioma": "Español"
   },
   {
@@ -176,7 +159,6 @@
     "genero": "Sátira Política",
     "año_publicacion": 1945,
     "paginas": 112,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -186,7 +168,6 @@
     "genero": "Drama",
     "año_publicacion": 1890,
     "paginas": 254,
-    "disponible": true,
     "idioma": "Inglés"
   },
   {
@@ -196,7 +177,6 @@
     "genero": "Thriller Psicológico",
     "año_publicacion": 2002,
     "paginas": 528,
-    "disponible": true,
     "idioma": "Inglés"
   }
 ]
