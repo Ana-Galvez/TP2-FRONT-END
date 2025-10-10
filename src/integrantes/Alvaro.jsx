@@ -6,6 +6,7 @@ import Idiomas from "../componentes/Idiomas";
 import Educacion from "../componentes/Educacion";
 import Footer from "../componentes/Footer";
 import SobreMi from "../componentes/SobreMi";
+import Proyectos from "../componentes/Proyectos";
 
 const Alvaro = () => {
   return (
@@ -23,6 +24,17 @@ const Alvaro = () => {
         aplicados en el desarrollo de proteínas prometedoras para mejorar la calidad de vida de las personas. Lograremos una espectativa de vida de 150 años? Solo Skynet y Sarah Conor lo saben.
         Soy Santiagueño, adicto al mate y pretendo otrabajar en equipo aunque a veces no me dan los tiempos ni si quiera para cocinarme un guiso... Ampliaremos."
       />
+      <Proyectos>
+        <h2>Proyectos destacados</h2>
+          <ul id="highlighted-projects">
+              <li>Orbely Lab: AgTech Web analítica que utiliza el procesamiento de datos para informar la nutrición y estado de los campos mediantes KPIs específicos.</li>
+              <li>Orbely Map: AgTEch Web que integra visualizaciones de Sentinel y ArSat para la visualización en tiempo real de lotes y campañas agropecuarias.</li>
+              <li>Apex Way: Desarrollo de frameworks para el testing de la pagina web de la empresa Apex y su plataforma de mensajería y managing.</li>
+              <li>Moovear: Testing web y mobile para aplicación tipo Uber/Cabify para el traslado de pacientes y la gestión de choferes de ambulancias para el cumplimiento de las ART.</li>
+              <li>MedLab: Testing web y mobile para aplicación de gestión de recetas médicas y turnos en clínicas y sanatorios.</li>
+              <li>Cropilot: Ingeniería de calidad para aplicación AgTech mobile que gestión cultivos y campañas mediantes rindes objetivos utilizando modelos predictivos. </li>
+          </ul>
+      </Proyectos>
       <Habilidades>
         <h3>Habilidades</h3>
         <div>

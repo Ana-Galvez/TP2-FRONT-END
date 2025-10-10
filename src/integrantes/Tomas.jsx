@@ -6,6 +6,7 @@ import Idiomas from "../componentes/Idiomas";
 import Footer from "../componentes/Footer";
 import Educacion from "../componentes/Educacion";
 import SobreMi from "../componentes/SobreMi";
+import Proyectos from "../componentes/Proyectos";
 
 const Tomas = () => {
   return (
@@ -24,6 +25,14 @@ const Tomas = () => {
         personales. Mi meta es seguir creciendo y optimizando mis métodos de trabajo, combinando práctica y
         tecnología de manera sencilla y útil."
       />
+      <Proyectos>
+        <h2>Proyectos finalizados</h2>
+          <ul id="finalized-projects">
+              <li>Sistema de acceso web a base de datos educativa.</li>
+              <li>Sistema automatico de envio de informacion de materias pendientes.</li>
+              <li>Implementacion de scripts en App Script para su uso en oficina.</li>
+          </ul>
+      </Proyectos>
       <Habilidades>
         <h3>Habilidades</h3>
         <div>

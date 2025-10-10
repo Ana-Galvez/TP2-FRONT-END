@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const Habilidades = ({children}) => {
+const Proyectos = ({children}) => {
   const sectionRef = useRef(null);
   return (
     <section ref={sectionRef}>
@@ -8,4 +8,4 @@ const Habilidades = ({children}) => {
     </section>
   )
 }
-export default Habilidades
+export default Proyectos
