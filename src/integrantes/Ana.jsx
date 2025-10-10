@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro"
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
-import Footer from "../componentes/Footer";
-import Habilidadades from "../componentes/Habilidadades";
+import Habilidades from "../componentes/Habilidades";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 import Musica from "../componentes/Musica";
+import Footer from "../componentes/Footer";
 
 const Ana = () => {
 
@@ -30,13 +30,13 @@ const Ana = () => {
           <p>Ubicación: La Matanza | Edad: 43</p>
           <img src={imgAna} alt="Imagen de ana"></img>
       </HeaderIntegrantes>
-      <Habilidadades>
+      <Habilidades>
         <h2>Habilidades</h2>
         <ul id="skills-list">
           <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Colaborativa</li><li>Proactiva</li>
          </ul>
         <button>Mostrar/Ocultar</button>  
-      </Habilidadades>
+      </Habilidades>
       <PeliculasFavoritas>
         <h2>Películas favoritas</h2>
         <ul id="movies-list"><li>Titanic</li><li>Pasajeros</li><li>Diario de una pasión</li></ul>

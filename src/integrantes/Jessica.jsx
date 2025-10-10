@@ -1,6 +1,7 @@
 import imgJessica from "../assets/jes.png";
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
+import Habilidades from "../componentes/Habilidades";
 import Footer from "../componentes/Footer";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 import Musica from "../componentes/Musica";
@@ -14,7 +15,7 @@ const Jessica = () => {
         <h1>Jessica Oleszuk</h1>
         <p class="info"> Tucumán | Edad: 38 </p>
       </HeaderIntegrantes>
-      <HeaderIntegrantes>
+      <Habilidades>
         <h2>Habilidades</h2>
         <ul id="skills-list">
           <li>HTML5</li>
@@ -23,7 +24,7 @@ const Jessica = () => {
           <li>Trabajo en equipo</li>
         </ul>
         <button>Mostrar/Ocultar</button>
-      </HeaderIntegrantes>
+      </Habilidades>
       <PeliculasFavoritas>
         <h2>Películas favoritas</h2>
         <ul id="Movies-list">

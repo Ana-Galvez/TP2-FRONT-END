@@ -1,8 +1,9 @@
 import imgTomas from "../assets/tomas.png";
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
+import Habilidades from "../componentes/Habilidades";
+import Idiomas from "../componentes/Idiomas";
 import Footer from "../componentes/Footer";
-import Habilidadades from "../componentes/Habilidadades";
 
 const Tomas = () => {
   return (
@@ -13,7 +14,7 @@ const Tomas = () => {
         <p>Ubicación: Ciudad Autonoma de Buenos Aires | Edad: 22</p>
         <img src={imgTomas} alt="Avatar Tomas" class="avatar-right" id="tomas-avatar"></img>
       </HeaderIntegrantes>
-      <Habilidadades>
+      <Habilidades>
         <h3>Habilidades</h3>
         <div>
             <ul>
@@ -26,7 +27,17 @@ const Tomas = () => {
                 <li>Soporte a sistemas de TI </li>
             </ul>
         </div>
-      </Habilidadades>
+      </Habilidades>
+      <Idiomas>
+        <h3>Idiomas</h3>
+        <div>
+            <ul>
+                <li>Español (Nativo) </li>
+                <li>Inglés (C1) </li>
+                <li>Portugués (B1) </li>
+            </ul>
+        </div>
+      </Idiomas>
       <Footer/>
     </>
   )

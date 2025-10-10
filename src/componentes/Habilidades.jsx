@@ -1,5 +1,5 @@
 import { useRef } from "react";
-const Habilidadades = ({children}) => {
+const Habilidades = ({children}) => {
   const sectionRef = useRef(null);
   return (
     <section ref={sectionRef}>
@@ -7,4 +7,4 @@ const Habilidadades = ({children}) => {
     </section>
   )
 }
-export default Habilidadades
+export default Habilidades

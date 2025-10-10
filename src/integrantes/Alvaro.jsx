@@ -1,8 +1,9 @@
 import imgAlvaro from "../assets/alvaro.png"
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
+import Habilidades from "../componentes/Habilidades";
+import Idiomas from "../componentes/Idiomas";
 import Footer from "../componentes/Footer";
-import Habilidadades from "../componentes/Habilidadades";
 
 const Alvaro = () => {
   return (
@@ -13,7 +14,7 @@ const Alvaro = () => {
           <p> Ubicación: Córdoba, Argentina | Edad: 30</p>
           <img src={imgAlvaro} alt="Avatar Alvaro" class="avatar-right" id="alvaro-avatar"></img>
       </HeaderIntegrantes>
-      <Habilidadades>
+      <Habilidades>
         <h3>Habilidades</h3>
         <div class="dropdown-content">
             <ul>
@@ -34,7 +35,16 @@ const Alvaro = () => {
                 <li>Data Analytics</li>
             </ul>
         </div>
-      </Habilidadades>
+      </Habilidades>
+      <Idiomas>
+        <h3>Idiomas</h3>
+        <div>
+          <ul>
+            <li>Español (Nativo)</li>
+            <li>Inglés (B1)</li>
+          </ul>
+        </div>
+      </Idiomas>
       <Footer>
         <p>© 2025 Alvaro Facundo Coronel - Proyecto de presentación</p>
       </Footer>

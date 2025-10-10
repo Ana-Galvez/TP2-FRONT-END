@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import Footer from "../componentes/Footer";
-import Habilidadades from "../componentes/Habilidadades";
+import Habilidades from "../componentes/Habilidades";
 import PeliculasFavoritas from "../componentes/PeliculasFavoritas";
 import Musica from "../componentes/Musica";
 
@@ -25,7 +25,7 @@ const Virginia = () => {
           </div>
           <img src={imgVirginia}alt="Avatar de Virginia" class="avatar-right" />
       </HeaderIntegrantes>
-      <Habilidadades>
+      <Habilidades>
           <h2>Habilidades</h2>
           <ul id="skills-list" class="skills">
             <li>HTML semántico</li>
@@ -33,7 +33,7 @@ const Virginia = () => {
             <li>JavaScript</li>
             <li>Trabajo en equipo</li>
           </ul>
-      </Habilidadades>
+      </Habilidades>
       <PeliculasFavoritas>
         <h2>Películas </h2>
         <ul id="peli-list">
