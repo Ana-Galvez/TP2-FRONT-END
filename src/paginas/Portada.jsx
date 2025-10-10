@@ -19,7 +19,7 @@ const Portada = () => {
     "Portada en Portada.jsx, carpeta integrantes donde hablamos de cada uno, carpeta componentes donde se encuentran componentes reutilizables y carpeta paginas donde se encuentran todos los jsx que aparecen en el Sidebar.",
     "Sección Bitácora con decisiones, dificultades y cambios.",
     "Sección Datos JSON donde se muestran los datos de un archivo JSON que trata sobre libros.",
-    "Sección Datos API donde se muestran los datos de una API pública.",
+    "Sección Datos API donde se muestran los datos de la API pública Randomuser.",
     "Tipografías de Google Fonts y estilos consistentes.",
   ];
   

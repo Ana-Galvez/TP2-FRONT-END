@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
+import LectorUsuarios from "../componentes/LectorUsuarios";
 import Footer from "../componentes/Footer";
 
 const DatosAPI = () => {
@@ -19,7 +20,8 @@ const DatosAPI = () => {
     <div style={themeStyles}>
       <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
       <Sidebar/>
-      <h1>Datos de la API</h1>
+      <h1>Datos de la API Randomuser</h1>
+      <LectorUsuarios/>
       <Footer> 
         <p>
           © 2025 Equipo Retro Front End Grupo 12 —{" "}
