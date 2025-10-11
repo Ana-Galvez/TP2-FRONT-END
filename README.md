@@ -16,8 +16,9 @@ Lo importante es el uso de componentes reutilizables con y sin props, con la uti
 1. Clonar este repositorio:
    ```bash
    git clone https://github.com/Ana-Galvez/TP2-FRONT-END.git
-2. Poner este comando  npm install  para instalar todas las dependencias
-3. Poner este comando npm run dev  para correr el proyecto en modo desarrollador, creando un servidor local.
+2. Ver si está instalado node   node -v
+3. Poner este comando  npm install  para instalar todas las dependencias
+4. Poner este comando npm run dev  para correr el proyecto en modo desarrollador, creando un servidor local.
 
 ## Enlace del sitio
 
