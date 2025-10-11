@@ -22,7 +22,7 @@ const Footer = ({children}) => {
   }, []);
 
   return (
-    <footer className="footer" ref={footerRef}>
+    <footer style={{textAlign:"center", color:"#475569",fontSize:"14px"}}>
       {children}
     </footer>
   );

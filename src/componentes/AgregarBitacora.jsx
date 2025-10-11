@@ -30,9 +30,9 @@ const AgregarBitacora = ({ itemsIniciales }) => {
 
   return (
     <>
-      <ul className="">
+      <ul className="lista-portada">
         {items.map((item, index) => (
-          <li key={index} style={{ marginBottom: "8px" }}>
+          <li key={index} style={{ borderLeft:"4px solid #2196f3",borderRadius:"6px",transition:"background 0.3s ease, transform 0.2s ease",lineHeight:"1.65", padding:"5px 10px" }}>
             {item}
             <button
               className=""
@@ -45,14 +45,15 @@ const AgregarBitacora = ({ itemsIniciales }) => {
         ))}
       </ul>
 
-      <div className="">
+      <div>
         <input
           type="text"
           value={nuevoItem}
           onChange={(e) => setNuevoItem(e.target.value)}
           placeholder="Escribí una nueva entrada..."
+          className="filtro-input"
         />
-        <button className="" onClick={handleAgregar}>
+        <button className="boton-agregar-bitacora" onClick={handleAgregar}>
           Agregar
         </button>
       </div>

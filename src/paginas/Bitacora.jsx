@@ -1,3 +1,4 @@
+import "../assets/styles/portada.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
@@ -33,22 +34,25 @@ const [isDark, setIsDark] = useState(false);
 };
 
   return (
-    <div style={themeStyles}>
-      <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
+    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
+      {/* <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/> */}
       <Sidebar />
+      <div className="content-sections">
+      <div className="header-portada-bitacora">
       <HeaderPortadaBitacora titulo="Bitácora" />
-      <AgregarBitacora itemsIniciales={bitacoraItems} />
+      <AgregarBitacora itemsIniciales={bitacoraItems} /></div>
       <Footer>
         <p>
           © 2025 Equipo Retro Front End Grupo 12 — 
-          <Link to="/integrantes/tomas">Tomás</Link> - 
-          <Link to="/integrantes/virginia">Virginia</Link> - 
-          <Link to="/integrantes/jessica">Jessica</Link> - 
-          <Link to="/integrantes/alvaro">Álvaro</Link> - 
-          <Link to="/integrantes/ana">Ana</Link>
+          <Link to="/integrantes/tomas" className="footer-integrantes">Tomás</Link> - 
+          <Link to="/integrantes/virginia" className="footer-integrantes">Virginia</Link> - 
+          <Link to="/integrantes/jessica" className="footer-integrantes">Jessica</Link> - 
+          <Link to="/integrantes/alvaro" className="footer-integrantes">Álvaro</Link> - 
+          <Link to="/integrantes/ana" className="footer-integrantes">Ana</Link>
         </p>
         <p>Insert Coin 💾</p>
       </Footer>
+      </div>
     </div>
   );
 };
