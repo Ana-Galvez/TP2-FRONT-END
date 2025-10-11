@@ -28,8 +28,6 @@ const Ana = () => {
       <div className="main-content">
       <HeaderIntegrantes>
           <EfectoEscrituraAna/>
-          {/* <h1>Ana</h1>
-          <p className="lista-portada">Ubicación: La Matanza | Edad: 43</p> */}
           <img src={imgAna} alt="Imagen de ana" style={{width:"15%",borderRadius:"15%"}}></img>
       </HeaderIntegrantes>
       <MostrarOcultar titulo="Habilidades">
