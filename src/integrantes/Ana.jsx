@@ -1,3 +1,4 @@
+import "../assets/styles/portada.css";
 import imgAna from "../assets/ana.PNG";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -20,9 +21,10 @@ const Ana = () => {
   };
 
   return (
-    <div style={themeStyles}>
-      <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
+    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
+      {/* <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/> */}
       <Sidebar/>
+      <div className="main-content">
       <HeaderIntegrantes>
           <h1>Ana</h1>
           <p>Ubicación: La Matanza | Edad: 43</p>
@@ -46,6 +48,7 @@ const Ana = () => {
         </p>
         <p>Insert Coin 💾</p>
       </Footer>
+      </div>
     </div>
   );
 };
