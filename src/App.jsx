@@ -8,7 +8,7 @@ import DiagramaCarpetas from "./paginas/DiagramaCarpetas";
 import Ana from "./integrantes/Ana";
 import Virginia from "./integrantes/Virginia";
 import Tomas from "./integrantes/Tomas";
-import Jessica from "./integrantes/Jessica";
+import IntegranteJessica from "./pages/integrantes/IntegranteJessica";
 import Alvaro from "./integrantes/Alvaro";
 // import './App.css'
 
@@ -35,7 +35,7 @@ function App() {
         <Route path="/integrantes/ana" element={<Ana />} />
         <Route path="/integrantes/virginia" element={<Virginia />} />
         <Route path="/integrantes/tomas" element={<Tomas />} />
-        <Route path="/integrantes/jessica" element={<Jessica />} />
+        <Route path="/integrantejessica" element={<IntegranteJessica />} />
         <Route path="/integrantes/alvaro" element={<Alvaro />} />
       </Routes>
     </Router>
