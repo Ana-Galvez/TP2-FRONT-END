@@ -40,7 +40,7 @@ const LectorUsuarios = () => {
   return (
     <div className="contenedor-libros">
       {usuarios.map((usuario, index) => (
-        <div
+        <div className="tarjeta-libro"
           key={index}
         >
           <img
