@@ -10,14 +10,14 @@ const MostrarOcultar = ({titulo,children}) => {
   return (
     <div>
       <div>
-        <h2>{titulo}</h2>
+        <h2 style={{textAlign:"center", fontSize:"1.05rem",marginTop:"40px"}}>{titulo}</h2>
         {/* Ver el contenido */}
         {isVisible && (
           <div>
             {children}
           </div>
          )}
-        <button onClick={visibleONo}>
+        <button onClick={visibleONo} className="boton-agregar-bitacora" style={{width:"100%"}}>
           {isVisible ? 'Ocultar' : 'Mostrar'}
         </button>
       </div>
