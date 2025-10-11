@@ -1,3 +1,4 @@
+import "../assets/styles/TarjetaLibro.css";
 import { useState, useEffect } from "react";
 import TarjetaLibro from "./TarjetaLibro";
 import datosLibros from "../../public/data.json";
@@ -26,8 +27,8 @@ const LectorLibros = () => {
 
   return (
     <div>
-      <h1>Catálogo de Libros (Datos JSON)</h1>
-      <div>
+      <h1 style={{textAlign:"center",margin:"50px 0px"}}>Catálogo de Libros (Datos JSON)</h1>
+      <div className="contenedor-libros">
         {libros.map((libro) => (
           <TarjetaLibro 
             key={libro.id}

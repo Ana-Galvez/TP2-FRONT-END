@@ -1,0 +1,55 @@
+/* 🎨 Tarjeta individual */
+.tarjeta-libro {
+  background-color: #ffffff;
+  border: 3px solid #161616;
+  box-shadow: 6px 6px 0 0 #161616;
+  border-radius: 10px;
+  padding: 16px;
+  width: 260px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Inter,sans-serif;
+  font-size: 0.85rem;
+  color: #0f172a;
+}
+
+/* 🖱️ Efecto hover */
+.tarjeta-libro:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 0 #161616;
+}
+
+/* 🧾 Cada línea de texto */
+.tarjeta-libro p {
+  margin: 6px 0;
+}
+
+/* ✨ Icono del título */
+.tarjeta-libro p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* 💡 Contenedor general de las tarjetas */
+.contenedor-libros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+@media (max-width: 900px) {
+  .tarjeta-libro {
+    width: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  .tarjeta-libro {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}

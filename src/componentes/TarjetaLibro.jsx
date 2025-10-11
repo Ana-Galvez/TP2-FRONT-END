@@ -1,11 +1,12 @@
+import "../assets/styles/TarjetaLibro.css";
 const TarjetaLibro = ({libro}) => {
 
   const { titulo, autor, genero, año_publicacion, paginas, idioma } = libro;
 
 
   return (
-     <div>
-      <h3>📚 {titulo}</h3>
+     <div className="tarjeta-libro">
+      <p>📚 {titulo}</p>
       <p>
         <strong>Autor:</strong> {autor}
       </p>

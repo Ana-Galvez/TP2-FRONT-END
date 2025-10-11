@@ -1,3 +1,4 @@
+import "../assets/styles/portada.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
@@ -17,9 +18,10 @@ const [isDark, setIsDark] = useState(false);
 };
 
   return (
-    <div style={themeStyles}>
-      <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
+    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
+      {/* <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/> */}
       <Sidebar/>
+      <div className="main-content">
       <LectorLibros/>
       <Footer> 
         <p>
@@ -28,6 +30,7 @@ const [isDark, setIsDark] = useState(false);
         </p>
         <p>Insert Coin 💾</p>
       </Footer>
+      </div>
     </div>
   )
 }
