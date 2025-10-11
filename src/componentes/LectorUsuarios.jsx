@@ -1,3 +1,4 @@
+import "../assets/styles/TarjetaLibro.css";
 import { useState,useEffect } from "react";
 
 const LectorUsuarios = () => {
@@ -37,7 +38,7 @@ const LectorUsuarios = () => {
   }
 
   return (
-    <div>
+    <div className="contenedor-libros">
       {usuarios.map((usuario, index) => (
         <div
           key={index}

@@ -1,3 +1,4 @@
+import "../assets/styles/portada.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ModoOscuro from "../componentes/ModoOscuro";
@@ -17,10 +18,11 @@ const DatosAPI = () => {
   };
 
   return (
-    <div style={themeStyles}>
-      <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
+    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
+      {/* <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/> */}
       <Sidebar/>
-      <h1>Datos de la API Randomuser</h1>
+      <div className="main-content">
+      <h1 style={{textAlign:"center"}}>Datos de la API Randomuser</h1>
       <LectorUsuarios/>
       <Footer> 
         <p>
@@ -29,6 +31,7 @@ const DatosAPI = () => {
         </p>
         <p>Insert Coin 💾</p>
       </Footer>
+      </div>
     </div>
   )
 }
