@@ -4,6 +4,10 @@ import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import SobreMi from "../componentes/SobreMi";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
+import Frase from "../components/Frase";
+import "./IntegranteJessica.css";
+import datos from "../data/datos.json"; 
+
 
 const Jessica = () => {
   return (
@@ -18,6 +22,15 @@ const Jessica = () => {
         titulo="Sobre mi"
         descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
       />
+      <Frase />
+      <div className="tarjetas">
+  {datos.map((item) => (
+    <div className="tarjeta" key={item.id}>
+      <h2>{item.nombre}</h2>
+      <p>{item.categoria}</p>
+    </div>
+  ))}
+</div>
       <MostrarOcultar titulo="Habilidades">
         <ul id="skills-list">
           <li>HTML5</li>
