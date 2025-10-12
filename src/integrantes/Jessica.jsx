@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import "../assets/styles/portada.css";
+import { useState } from "react";
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes"; 
 import SobreMi from "../componentes/SobreMi";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
-import imgJessica from "../assets/jes.png"; // tu imagen
+import imgJessica from "../assets/jes.png";
 import "../assets/styles/jessica.css";
 
 const Jessica = () => {
@@ -24,22 +25,25 @@ const Jessica = () => {
   };
 
   return (
-    <div className="jessica-container">
+    <div className="portada-container body">
       <Sidebar />
-      <div className="jessica-content">
+      <div className="main-content">
         <HeaderIntegrantes>
+        <div className="hero">
+          <img src={imgJessica} alt="Jessica" className="avatar"/>
           <h1>Jessica Oleszuk</h1>
-          <p>Ubicación: Tucumán | Edad: 38 años</p>
-          <img src={imgJessica} alt="Jessica" />
+          <p className="info" style={{  fontFamily: "'Poppins', sans-serif"}}>Ubicación: Tucumán | Edad: 38 años</p>
+        </div>
         </HeaderIntegrantes>
 
-            <SobreMi
+        <SobreMi
         titulo="Sobre mí"
         descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
       />
 
                 {/* Frases motivacionales */}
-        <div className="motivational-section">
+        <div >
+          <h2>Te dejo una frase de regalo</h2>
           <div id="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
           <button className="btn" onClick={newQuote}>Nueva frase</button>
         </div>
