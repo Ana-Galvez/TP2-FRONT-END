@@ -35,7 +35,7 @@ const Jessica = () => {
           <p className="info" style={{  fontFamily: "'Poppins', sans-serif"}}>Ubicación: Tucumán | Edad: 38 años</p>
         </div>
         </HeaderIntegrantes>
-
+        <span style={{marginTop:"30px"}}></span>
         <SobreMi
         titulo="Sobre mí"
         descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
@@ -48,7 +48,7 @@ const Jessica = () => {
           <button className="btn" onClick={newQuote}>Nueva frase</button>
         </div>
 
-        <MostrarOcultar titulo="Habilidades">
+        <MostrarOcultar titulo="Habilidades" botonClassName="btn">
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -57,7 +57,7 @@ const Jessica = () => {
           </ul>
         </MostrarOcultar>
 
-        <MostrarOcultar titulo="Películas favoritas">
+        <MostrarOcultar titulo="Películas favoritas" botonClassName="btn">
           <ul>
             <li>Titanic</li>
             <li>En busca de la felicidad</li>
@@ -65,7 +65,7 @@ const Jessica = () => {
           </ul>
         </MostrarOcultar>
 
-        <MostrarOcultar titulo="Música / Discos favoritos">
+        <MostrarOcultar titulo="Música / Discos favoritos" botonClassName="btn">
           <ul>
             <li>Miranda</li>
             <li>Tan Bionica</li>

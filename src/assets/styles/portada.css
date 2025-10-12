@@ -106,7 +106,12 @@ width: 80%;
     background: #fff;
     color: #0f172a;
     box-shadow: 4px 4px 0 0 #161616;
-}
+  }
+
+  /* para la página de ana */
+  .boton-agregar-bitacora-ancho{
+    width: 100%;  
+  }
 
 .boton-agregar-bitacora:hover {
     transform: translate(-2px, -2px);
