@@ -44,32 +44,32 @@ const Jessica = () => {
                 {/* Frases motivacionales */}
         <div >
           <h2>Te dejo una frase de regalo</h2>
-          <div id="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
+          <div className="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
           <button className="btn" onClick={newQuote}>Nueva frase</button>
         </div>
 
         <MostrarOcultar titulo="Habilidades" botonClassName="btn">
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Trabajo en equipo</li>
+            <li className="quote">HTML</li>
+            <li className="quote">CSS</li>
+            <li className="quote">JavaScript</li>
+            <li className="quote">Trabajo en equipo</li>
           </ul>
         </MostrarOcultar>
 
         <MostrarOcultar titulo="Películas favoritas" botonClassName="btn">
           <ul>
-            <li>Titanic</li>
-            <li>En busca de la felicidad</li>
-            <li>Diario de una pasión</li>
+            <li className="quote">Titanic</li>
+            <li className="quote">En busca de la felicidad</li>
+            <li className="quote">Diario de una pasión</li>
           </ul>
         </MostrarOcultar>
 
         <MostrarOcultar titulo="Música / Discos favoritos" botonClassName="btn">
           <ul>
-            <li>Miranda</li>
-            <li>Tan Bionica</li>
-            <li>Maria Becerra</li>
+            <li className="quote">Miranda</li>
+            <li className="quote">Tan Bionica</li>
+            <li className="quote">Maria Becerra</li>
           </ul>
         </MostrarOcultar>
 
