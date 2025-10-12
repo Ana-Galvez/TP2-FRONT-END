@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Sidebar from "../componentes/Sidebar";
-import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
+import HeaderIntegrantes from "../componentes/HeaderIntegrantes"; 
+import SobreMi from "../componentes/SobreMi";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
 import imgJessica from "../assets/jes.png"; // tu imagen
-import "./Jessica.css";
+import "../assets/styles/jessica.css";
 
 const Jessica = () => {
   const [quote, setQuote] = useState("");
@@ -32,6 +33,17 @@ const Jessica = () => {
           <img src={imgJessica} alt="Jessica" />
         </HeaderIntegrantes>
 
+            <SobreMi
+        titulo="Sobre mí"
+        descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
+      />
+
+                {/* Frases motivacionales */}
+        <div className="motivational-section">
+          <div id="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
+          <button className="btn" onClick={newQuote}>Nueva frase</button>
+        </div>
+
         <MostrarOcultar titulo="Habilidades">
           <ul>
             <li>HTML</li>
@@ -56,12 +68,6 @@ const Jessica = () => {
             <li>Maria Becerra</li>
           </ul>
         </MostrarOcultar>
-
-        {/* Frases motivacionales */}
-        <div className="motivational-section">
-          <div id="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
-          <button className="btn" onClick={newQuote}>Nueva frase</button>
-        </div>
 
         <Footer>
           <p>© 2025 Equipo Retro Front End Grupo 12</p>
