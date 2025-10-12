@@ -3,19 +3,32 @@ import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
-import imgJessica from "../assets/jessica.png"; // reemplaza por tu imagen
+import imgJessica from "../assets/jes.png"; // tu imagen
 import "./Jessica.css";
 
 const Jessica = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [quote, setQuote] = useState("");
+
+  const quotes = [
+    "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+    "Cree en ti y todo será posible.",
+    "La disciplina es el puente entre metas y logros.",
+    "Cada día es una nueva oportunidad para crecer.",
+    "Haz hoy lo que tu futuro yo te agradecerá."
+  ];
+
+  const newQuote = () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    setQuote(quotes[randomIndex]);
+  };
 
   return (
-    <div className={`jessica-container ${isDark ? "dark-mode" : ""}`}>
+    <div className="jessica-container">
       <Sidebar />
       <div className="jessica-content">
         <HeaderIntegrantes>
-          <h1>Jessica</h1>
-          <p>Ubicación: Ciudad | Edad: 25</p>
+          <h1>Jessica Oleszuk</h1>
+          <p>Ubicación: Tucumán | Edad: 38 años</p>
           <img src={imgJessica} alt="Jessica" />
         </HeaderIntegrantes>
 
@@ -31,18 +44,24 @@ const Jessica = () => {
         <MostrarOcultar titulo="Películas favoritas">
           <ul>
             <li>Titanic</li>
-            <li>Pasajeros</li>
+            <li>En busca de la felicidad</li>
             <li>Diario de una pasión</li>
           </ul>
         </MostrarOcultar>
 
         <MostrarOcultar titulo="Música / Discos favoritos">
           <ul>
-            <li>Celine Dion</li>
-            <li>Ha*Ash</li>
-            <li>Chayanne</li>
+            <li>Miranda</li>
+            <li>Tan Bionica</li>
+            <li>Maria Becerra</li>
           </ul>
         </MostrarOcultar>
+
+        {/* Frases motivacionales */}
+        <div className="motivational-section">
+          <div id="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
+          <button className="btn" onClick={newQuote}>Nueva frase</button>
+        </div>
 
         <Footer>
           <p>© 2025 Equipo Retro Front End Grupo 12</p>
