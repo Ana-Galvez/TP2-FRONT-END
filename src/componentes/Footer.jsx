@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "../assets/styles/portada.css";
 
 const Footer = ({children}) => {
 
@@ -22,7 +23,7 @@ const Footer = ({children}) => {
   }, []);
 
   return (
-    <footer ref={footerRef} style={{textAlign:"center", color:"#475569",fontSize:"14px",marginTop:"auto"}}>
+    <footer ref={footerRef} className="footer">
       {children}
     </footer>
   );
