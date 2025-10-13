@@ -43,13 +43,13 @@
 
 @media (max-width: 900px) {
   .tarjeta-libro {
-    width: 45%;
+    width: 30%;
   }
 }
 
 @media (max-width: 400px) {
   .tarjeta-libro {
-    width: 100%;
+    width: 30%;
     font-size: 0.8rem;
   }
 }
