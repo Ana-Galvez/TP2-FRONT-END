@@ -39,5 +39,5 @@ Lo importante es el uso de componentes reutilizables con y sin props, con la uti
 ├── img/ # Imágenes y assets (Imágenes dentro de carpeta)
 │ ├── favicon.ico
 │ └── ...
-└── README.md
+└── README.md.
 ```
