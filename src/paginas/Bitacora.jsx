@@ -1,7 +1,6 @@
 import "../assets/styles/portada.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
 import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
 import AgregarBitacora from "../componentes/AgregarBitacora";
@@ -23,19 +22,8 @@ const Bitacora = () => {
     "Implementación del proyecto en Vercel importando el repositorio de GitHub.",
   ];
 
-  // Estado del Modo
-const [isDark, setIsDark] = useState(false);
-  const toggleTheme = () => {
-  setIsDark(prevIsDark => !prevIsDark);
-};
-  const themeStyles = {
-  backgroundColor: isDark ? 'black' : 'white',
-  color: isDark ? 'white' : 'black',
-};
-
   return (
-    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
-      {/* <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/> */}
+    <div className="portada-container">
       <Sidebar />
       <div className="content-sections">
       <div className="header-portada-bitacora">

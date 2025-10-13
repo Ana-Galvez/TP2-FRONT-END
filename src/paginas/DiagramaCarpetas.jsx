@@ -1,25 +1,13 @@
 import "../assets/styles/portada.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
 import Footer from "../componentes/Footer";
 
 const DiagramaCarpetas = () => {
 
-  // Estado del Modo
-const [isDark, setIsDark] = useState(false);
-  const toggleTheme = () => {
-  setIsDark(prevIsDark => !prevIsDark);
-};
-  const themeStyles = {
-  backgroundColor: isDark ? 'black' : 'white',
-  color: isDark ? 'white' : 'black',
-};
-
   return (
-    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
-      {/* <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/> */}
+    <div className="portada-container">
       <Sidebar/>
       <div className="main-content">
     <h1 style={{textAlign:"center"}}>Diagrama de Carpetas</h1>

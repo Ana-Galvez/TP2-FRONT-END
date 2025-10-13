@@ -2,7 +2,6 @@ import "../assets/styles/portada.css";
 import imgAna from "../assets/ana.PNG";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ModoOscuro from "../componentes/ModoOscuro"
 import EfectoEscrituraAna from "../componentes/EfectoEscrituraAna";
 import Sidebar from "../componentes/Sidebar";
 import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
@@ -11,19 +10,8 @@ import Footer from "../componentes/Footer";
 
 const Ana = () => {
 
-  // Estado del Modo
-  const [isDark, setIsDark] = useState(false);
-    const toggleTheme = () => {
-    setIsDark(prevIsDark => !prevIsDark);
-  };
-    const themeStyles = {
-    backgroundColor: isDark ? 'black' : 'white',
-    color: isDark ? 'white' : 'black',
-  };
-
   return (
-    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
-      {/* <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/> */}
+    <div className="portada-container">
       <Sidebar/>
       <div className="main-content">
       <HeaderIntegrantes>
