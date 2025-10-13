@@ -11,7 +11,7 @@ const DatosAPI = () => {
     <div className="portada-container">
       <Sidebar/>
       <div className="main-content">
-      <h1 style={{textAlign:"center"}}>Datos de la API Randomuser</h1>
+      <h1 style={{textAlign:"center",marginTop:"50px"}}>Datos de la API Randomuser</h1>
       <LectorUsuarios/>
       <Footer> 
         <p>
