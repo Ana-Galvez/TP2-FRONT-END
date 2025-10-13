@@ -55,7 +55,7 @@ const LectorUsuarios = () => {
               📍 {usuario.location.city}, {usuario.location.state},{" "}
               {usuario.location.country}
             </p>
-            <p>📧 {usuario.email}</p>
+            <p className="email">📧 {usuario.email}</p>
             <p>📞 {usuario.phone}</p>
             <p>🎂 {usuario.dob.age} años</p>
           </div>
