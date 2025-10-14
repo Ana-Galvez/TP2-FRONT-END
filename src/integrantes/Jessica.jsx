@@ -1,49 +1,84 @@
-import imgJessica from "../assets/jes.png";
+import "../assets/styles/portada.css";
+import { useState } from "react";
 import Sidebar from "../componentes/Sidebar";
-import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
+import HeaderIntegrantes from "../componentes/HeaderIntegrantes"; 
 import SobreMi from "../componentes/SobreMi";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
+import imgJessica from "../assets/jes.png";
+import "../assets/styles/jessica.css";
 
 const Jessica = () => {
+  const [quote, setQuote] = useState("");
+
+  const quotes = [
+    "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+    "Cree en ti y todo será posible.",
+    "La disciplina es el puente entre metas y logros.",
+    "Cada día es una nueva oportunidad para crecer.",
+    "Haz hoy lo que tu futuro yo te agradecerá."
+  ];
+
+  const newQuote = () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    setQuote(quotes[randomIndex]);
+  };
+
   return (
-    <>
-      <Sidebar/>
-      <HeaderIntegrantes>
-        <img src={imgJessica} alt="Avatar Jessica"/>
-        <h1>Jessica Oleszuk</h1>
-        <p> Tucumán | Edad: 38 </p>
-      </HeaderIntegrantes>
-      <SobreMi
-        titulo="Sobre mi"
+    <div className="portada-container body">
+      <Sidebar />
+      <div className="main-content">
+        <HeaderIntegrantes>
+        <div className="hero">
+          <img src={imgJessica} alt="Jessica" className="avatar"/>
+          <h1>Jessica Oleszuk</h1>
+          <p className="info" style={{  fontFamily: "'Poppins', sans-serif"}}>Ubicación: Tucumán | Edad: 38 años</p>
+        </div>
+        </HeaderIntegrantes>
+        <span style={{marginTop:"30px"}}></span>
+        <SobreMi
+        titulo="Sobre mí"
         descripcion="Soy estudiante de la Tecnicatura en desarrollo de Software, con interés en diseño frontend y experiencia de usuario. Me encanta aprender nuevas tecnologías y trabajar en equipo, aprendo mucho de mis compañeros tambíen."
       />
-      <MostrarOcultar titulo="Habilidades">
-        <ul id="skills-list">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Trabajo en equipo</li>
-        </ul>
-      </MostrarOcultar>
-      <MostrarOcultar titulo="Películas favoritas">
-        <ul id="Movies-list">
-          <li>En busca de la felicidad</li>
-          <li>La vida es bella</li>
-          <li>Cadena de favores</li>
-        </ul>
-      </MostrarOcultar>
-      <MostrarOcultar titulo="Música favorita">
-        <ul id="Music-list">
-          <li>Maria Becerra</li>
-          <li>Tan Bionica</li>
-          <li>Miranda</li>
-        </ul>
-      </MostrarOcultar>
-      <Footer>
-        <p>© 2025 Jessica Oleszuk | Grupo 12 - Front End</p>
-      </Footer>
-    </>
-  )
-}
-export default Jessica
+
+                {/* Frases motivacionales */}
+        <div >
+          <h2>Te dejo una frase de regalo</h2>
+          <div className="quote">{quote || "Presioná el botón para ver una frase motivacional"}</div>
+          <button className="btn" onClick={newQuote}>Nueva frase</button>
+        </div>
+
+        <MostrarOcultar titulo="Habilidades" botonClassName="btn">
+          <ul>
+            <li className="quote">HTML</li>
+            <li className="quote">CSS</li>
+            <li className="quote">JavaScript</li>
+            <li className="quote">Trabajo en equipo</li>
+          </ul>
+        </MostrarOcultar>
+
+        <MostrarOcultar titulo="Películas favoritas" botonClassName="btn">
+          <ul>
+            <li className="quote">Titanic</li>
+            <li className="quote">En busca de la felicidad</li>
+            <li className="quote">Diario de una pasión</li>
+          </ul>
+        </MostrarOcultar>
+
+        <MostrarOcultar titulo="Música / Discos favoritos" botonClassName="btn">
+          <ul>
+            <li className="quote">Miranda</li>
+            <li className="quote">Tan Bionica</li>
+            <li className="quote">Maria Becerra</li>
+          </ul>
+        </MostrarOcultar>
+
+        <Footer>
+          <p>© 2025 Equipo Retro Front End Grupo 12</p>
+        </Footer>
+      </div>
+    </div>
+  );
+};
+
+export default Jessica;

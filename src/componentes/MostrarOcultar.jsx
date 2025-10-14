@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const MostrarOcultar = ({titulo,children}) => {
+const MostrarOcultar = ({titulo,children,botonClassName = "boton-agregar-bitacora",widthClassName = "width-boton"}) => {
 
   const [isVisible, setIsVisible] = useState(true);
 
@@ -17,7 +17,7 @@ const MostrarOcultar = ({titulo,children}) => {
             {children}
           </div>
          )}
-        <button onClick={visibleONo} className="boton-agregar-bitacora" style={{width:"100%"}}>
+        <button onClick={visibleONo} className={`${botonClassName} ${widthClassName}`}>
           {isVisible ? 'Ocultar' : 'Mostrar'}
         </button>
       </div>
