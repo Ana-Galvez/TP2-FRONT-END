@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import "../assets/styles/portada.css";
 
 const Footer = ({children}) => {
 
