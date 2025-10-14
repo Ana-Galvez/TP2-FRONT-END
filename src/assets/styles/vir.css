@@ -1,0 +1,162 @@
+/* ====== Ancho cómodo y helpers propios de Virginia ====== */
+.vir-page .vir-content{
+  padding: 24px 32px;
+  padding-left: 260px; /* espacio del sidebar si algún día usás content-sections */
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 1400px){ .vir-page .vir-content{ max-width: 1320px; } }
+
+/* Contenedor del header + avatar flotante */
+.vir-hero{
+  position: relative;
+  margin-bottom: 3.5rem; /* deja lugar para el avatar que flota por fuera */
+}
+
+/* Avatar flotante (sale por el borde inferior derecho) */
+.vir-avatar-floating{
+  position: absolute;
+  right: clamp(16px, 3vw, 32px);
+  bottom: -22px;
+  width: clamp(120px, 12vw, 160px);
+  aspect-ratio: 1;
+  border-radius: 12px;
+  background: #fff;
+  border: 0.25rem solid #161616;
+  box-shadow: 0.6rem 0.6rem 0 0 #161616;
+  z-index: 2;
+}
+
+/* Chips/etiquetas */
+.vir-tags{ display:flex; gap:8px; flex-wrap:wrap; margin:8px 0; }
+.vir-tags span{
+  background:#f3f4f6; border:1px solid #e5e7eb;
+  padding:.25rem .6rem; border-radius:999px;
+}
+
+/* ====== Grid de tarjetas ====== */
+.vir-grid{
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 22px;
+}
+@media (max-width: 1100px){ .vir-grid{ grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .vir-grid{ grid-template-columns: 1fr; } }
+
+/* ====== Tarjetas pixeladas — MODO NORMAL (blancas) ====== */
+.pixel-card{
+  background: #ffffff;
+  color: #0f172a;
+  border: 0.35rem solid #161616;
+  box-shadow: 0.8rem 0.8rem 0 0 #161616;
+  border-radius: .5rem;
+  padding: 1.25rem 1.4rem;
+}
+.pixel-card h2{ color: #0f172a; }
+.pixel-card a{ color:#1d4ed8; text-decoration:none; }
+.pixel-card a:hover{ text-decoration:underline; }
+.pixel-card li::marker{ color:#64748b; }
+
+/* ====== Botón flotante (FAB) Pac-Mode ====== */
+.pac-fab{
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1200;
+  border: 0.25rem solid #161616;
+  background: #ffffff;
+  color: #0f172a;
+  width: 54px; height: 54px; border-radius: 999px;
+  box-shadow: 6px 6px 0 0 #161616;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display:flex; align-items:center; justify-content:center;
+}
+.pac-fab:hover{ transform: translate(-2px,-2px); }
+
+/* ====== PAC-MODE (se activa en <body class="vir-pac">) ====== */
+body.vir-pac{
+  --bg: #19027e;
+  --text: #e6f3ff;
+  --c1: #ffe100;
+  --pixel: #000;
+  background: url("/img/pacman-maze.png") center top / cover no-repeat var(--bg) !important;
+  color: var(--text);
+}
+
+/* Quitar fondos claros heredados y asegurar color */
+body.vir-pac .portada-container,
+body.vir-pac .main-content{
+  background: transparent !important;
+  color: var(--text) !important;
+}
+body.vir-pac .main-content :where(h1,h2,h3,p,li,small,strong,span,a){ color: var(--text) !important; }
+body.vir-pac li::marker{ color: var(--c1) !important; }
+
+/* Header/card/bloques con estilo pixel en Pac-Mode */
+body.vir-pac .header-portada-bitacora,
+body.vir-pac .github-section,
+body.vir-pac .header-integrantes,
+body.vir-pac .tarjeta-integrante,
+body.vir-pac .vir-hero > *,
+body.vir-pac .pixel-card{
+  background: rgba(10,12,28,.9) !important;
+  border-color: var(--c1) !important;
+  box-shadow: 0.8rem 0.8rem 0 0 var(--c1) !important;
+  color: var(--text) !important;
+}
+body.vir-pac .pixel-card h2{ color:#e6f3ff !important; }
+body.vir-pac .vir-tags span{
+  background: rgba(0,0,0,.35) !important;
+  border-color: var(--c1) !important;
+  color: var(--text) !important;
+}
+
+/* FAB estilo pac */
+body.vir-pac .pac-fab{
+  background: #0b1022;
+  color: var(--c1);
+  border-color: var(--c1);
+  box-shadow: 6px 6px 0 0 var(--c1);
+}
+
+/* Ajustes mobile */
+@media (max-width: 700px){
+  .vir-avatar-floating{
+    position: static;
+    display: block;
+    margin: 12px auto 0;
+    box-shadow: 0.4rem 0.4rem 0 0 #161616;
+  }
+  .vir-hero{ margin-bottom: 1.25rem; }
+}
+
+/* === Cada card ocupa la fila completa === */
+.vir-grid{
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr;   /* ← full width */
+  margin-top: 22px;
+}
+
+/* === Habilidades en 2 columnas (desktop), 1 en mobile === */
+.skills-grid{
+  display: grid;
+  grid-template-columns: 1fr;     /* mobile: una columna */
+  gap: .5rem 1.25rem;
+  padding-left: 1rem;             /* conserva el bullet indent */
+}
+
+@media (min-width: 768px){
+  .skills-grid{
+    grid-template-columns: 1fr 1fr; /* desktop: dos columnas */
+  }
+}
+
+/* (opc) bullets más prolijos dentro de grid */
+.skills-grid li{
+  break-inside: avoid;            /* evita saltos feos */
+  list-style: disc;
+}
