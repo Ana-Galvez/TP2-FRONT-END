@@ -1,4 +1,4 @@
-import "../assets/styles/TarjetaLibro.css";
+import "../assets/styles/tarjetaLibro.css";
 const TarjetaLibro = ({libro}) => {
 
   const { titulo, autor, genero, año_publicacion, paginas, idioma } = libro;
