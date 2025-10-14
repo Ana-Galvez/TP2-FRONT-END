@@ -1,5 +1,4 @@
 import "../assets/styles/portada.css";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "../componentes/Sidebar";
 import Footer from "../componentes/Footer";

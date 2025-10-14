@@ -176,6 +176,14 @@ h2 {
 }
 
 /* ======== FOOTER ======== */
+.footer{
+  text-align: center;
+  color: #475569;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+
 .footer-integrantes {
   text-decoration: none;
   background-color: rgb(43, 226, 58);
@@ -210,10 +218,14 @@ h2 {
 
   .header-portada-bitacora{
     margin-top: 50px;
+    width: 85%;
   }
 
   .main-content {
     padding: 1.8rem;
+      display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   }
 
   .content-sections{
@@ -238,10 +250,22 @@ h2 {
 @media (max-width: 400px) {
   h1 {
     font-size: 0.95rem;
+    margin-top: 50px;
   }
 
   h2 {
     font-size: 0.85rem;
+  }
+
+    .main-content {
+    padding: 1.8rem;
+      display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  }
+
+  .header-portada-bitacora{
+    width: 85%;
   }
 
   .header-portada-bitacora,

@@ -26,6 +26,11 @@
   margin: 6px 0;
 }
 
+.email{
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
 /* ✨ Icono del título */
 .tarjeta-libro p:first-child {
   font-size: 1.5rem;
