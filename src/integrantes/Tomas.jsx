@@ -1,20 +1,17 @@
-import React, { useState } from 'react'; // Importamos useState
+import React, { useState } from 'react';
 import imgTomas from "../assets/tomas.png";
 
-// Componentes de Layout y Estructura
+// Componentes de Layout y UI
 import Sidebar from "../componentes/Sidebar";
 import Footer from "../componentes/Footer";
 import HydraCanvas from '../componentes/HydraCanvas';
 import Dropdown from '../componentes/Dropdown'; 
+import "../assets/styles/tomas.css"; 
 
-// Estilos
-import "../assets/styles/integrante.css"; 
 
 const Tomas = () => {
-  // 1. Creamos un único estado para controlar todos los dropdowns
   const [dropdownsOpen, setDropdownsOpen] = useState(false);
 
-  // 2. Creamos una función para cambiar ese estado
   const toggleDropdowns = () => {
     setDropdownsOpen(prevState => !prevState);
   };
@@ -22,12 +19,16 @@ const Tomas = () => {
   return (
     <div className="integrante-container">
       <HydraCanvas />
+      
       <Sidebar />
       
       <main className="integrante-content">
-        <section>
-          <h1>Tomas Julian</h1>
-          <p>Ubicación: Ciudad Autónoma de Buenos Aires | Edad: 22</p>
+        
+        <section className="hero-section">
+          <div className="hero-text">
+            <h1>Tomas Julian</h1>
+            <p>Ubicación: Ciudad Autónoma de Buenos Aires | Edad: 22</p>
+          </div>
           <img src={imgTomas} alt="Avatar Tomas" id="tomas-avatar" />
         </section>
 
@@ -35,6 +36,44 @@ const Tomas = () => {
           <h2>Sobre mí</h2>
           <p>Soy Tomas Julian Resquin, trabajo en el área de la educación técnica y en el desarrollo de sistemas para la gestión educativa. Estoy aprendiendo y formándome en programación, bases de datos, ciberseguridad y software libre, con el objetivo de integrar estas temáticas en distintos proyectos laborales y personales. Mi meta es seguir creciendo y optimizando mis métodos de trabajo, combinando práctica y tecnología de manera sencilla y útil.</p>
         </section>
+
+        <div className="side-by-side-wrapper">
+          <section>
+            <h2>Películas Favoritas</h2>
+            <ul>
+              <li>
+                <a href="https://www.imdb.com/es/title/tt0071203/" target="_blank" rel="noopener noreferrer">Belladonna of Sadness</a>
+                <p>- Eiichi Yamamoto</p>
+              </li>
+              <li>
+                <a href="https://www.imdb.com/es/title/tt0364569/" target="_blank" rel="noopener noreferrer">Oldboy</a>
+                <p>- Park Chan-wook</p>
+              </li>
+              <li>
+                <a href="https://www.imdb.com/es/title/tt0175880/" target="_blank" rel="noopener noreferrer">Magnolia</a>
+                <p>- Paul Thomas Anderson</p>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Canciones Favoritas</h2>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=32_O-NwzFM0" target="_blank" rel="noopener noreferrer">Symphony No. 9 "From the New World" - IV. Allegro con fuoco</a>
+                <p>- Antonin Dvorak</p>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=DYwQy_9JPtQ" target="_blank" rel="noopener noreferrer">Can't Take My Eyes Off You</a>
+                <p>- Frankie Valli</p>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=uJ_1HMAGb4k" target="_blank" rel="noopener noreferrer">Riptide</a>
+                <p>- Vance Joy</p>
+              </li>
+            </ul>
+          </section>
+        </div>
 
         <section>
           <h2>Proyectos finalizados</h2>
@@ -46,7 +85,6 @@ const Tomas = () => {
         </section>
         
         <section className="dropdown-section">
-          {/* 3. Pasamos el estado y la función a cada Dropdown */}
           <Dropdown title="Habilidades" isOpen={dropdownsOpen} onClick={toggleDropdowns}>
             <ul>
               <li>Python (Avanzado)</li>

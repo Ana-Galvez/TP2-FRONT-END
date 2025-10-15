@@ -1,0 +1,84 @@
+/* Contenedor principal para centrar el árbol */
+.tree-container-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contenedor del árbol visual */
+.tree-container {
+  min-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #fff;
+  overflow: auto;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+}
+
+.empty-state {
+  color: #6c757d;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* --- Estilos del árbol (reutilizados y adaptados) --- */
+.tree-node {
+  position: relative;
+  padding-left: 25px;
+}
+
+.node-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.node-label:hover {
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+.folder-name {
+  font-weight: bold;
+}
+
+.node-children {
+  border-left: 1px dashed #adb5bd;
+  margin-left: 8px;
+}
+
+.tree-node::before, .tree-node::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  background-color: #adb5bd;
+}
+
+.tree-node::before {
+  top: 15px;
+  width: 15px;
+  height: 1px;
+}
+
+.tree-node::after {
+  top: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.tree-node:last-child::after {
+  height: 15px;
+}
+
+.tree-container > .tree-node::before,
+.tree-container > .tree-node::after {
+  display: none;
+}
+
+.tree-container > .tree-node {
+  padding-left: 0;
+}
+
