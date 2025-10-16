@@ -10,7 +10,6 @@ import Virginia from "./integrantes/Virginia";
 import Tomas from "./integrantes/Tomas";
 import Jessica from "./integrantes/Jessica";
 import Alvaro from "./integrantes/Alvaro";
-// import './App.css'
 
 function App() {
   return (
