@@ -10,6 +10,7 @@ import Virginia from "./integrantes/Virginia";
 import Tomas from "./integrantes/Tomas";
 import Jessica from "./integrantes/Jessica";
 import Alvaro from "./integrantes/Alvaro";
+import PaginaNoEncontrada from "./paginas/PaginaNoEncontrada";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
         <Route path="/integrantes/tomas" element={<Tomas />} />
         <Route path="/integrantes/jessica" element={<Jessica />} />
         <Route path="/integrantes/alvaro" element={<Alvaro />} />
+
+         <Route path="*" element={<PaginaNoEncontrada />} />
       </Routes>
     </Router>
   );
