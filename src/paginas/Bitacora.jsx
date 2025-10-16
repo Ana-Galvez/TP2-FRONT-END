@@ -1,5 +1,4 @@
 import "../assets/styles/portada.css";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "../componentes/Sidebar";
 import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
@@ -17,7 +16,6 @@ const Bitacora = () => {
     "Utilización de React Router",
     "Funcionalidades de React como filtro por integrantes, agregado de lista, alert, etc.",
     "Se agregó ícono de toda la página.",
-    "Se utilizó para el fondo de uno de los perfiles el proyecto colaborativo 'hydra'.",
     "Agregamos sección con link al repositorio de GitHub.",
     "Implementación del proyecto en Vercel importando el repositorio de GitHub.",
   ];
