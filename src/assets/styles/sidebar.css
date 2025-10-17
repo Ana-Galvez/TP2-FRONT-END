@@ -111,16 +111,24 @@
 /* --- Tablets / medianas (≤900px) --- */
 @media (max-width: 900px) {
   .sidebar {
-    width: 180px;
+    position: fixed;
+    left:-250px;
+    transition: left 0.3s ease;
+    width: 250px;
   }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-toggle-btn {
+    display: block;
+  }
+
+  /* Ocultar texto si querés versión ultra compacta */
   .sidebar-menu a,
   .submenu-toggle {
-    font-size: 0.85rem;
-    padding: 10px 14px;
-  }
-  .sidebar-icon {
-    width: 50px;
-    height: 50px;
+    font-size: 1rem;
   }
 }
 

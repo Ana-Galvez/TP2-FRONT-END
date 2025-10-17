@@ -1,0 +1,163 @@
+/* ====== Estilos de la página del Integrante ====== */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Contenedor principal que organiza la página en formato flex */
+.integrante-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  font-family: "Space Mono", monospace;
+  position: relative;
+}
+
+/* Área de contenido principal, a la derecha del sidebar */
+.integrante-content {
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+  color: #333;
+}
+
+/* Estilo del avatar con borde y sombra retro */
+#tomas-avatar {
+  width: 140px;
+  height: 140px;
+  border: 4px solid #333;
+  box-shadow: 6px 6px 0 0 #8a2be2;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+/* Estilo base para las "cajas" o secciones de contenido */
+.integrante-content section {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para la sección de presentación con el avatar */
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Añade un espacio entre el texto y la imagen */
+}
+
+/* Contenedor del texto en la sección hero */
+.hero-text {
+  flex-grow: 1; /* Hace que el contenedor del texto ocupe todo el espacio disponible */
+}
+
+/* Contenedor para elementos lado a lado en desktop */
+.side-by-side-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.side-by-side-wrapper > section {
+  flex: 1;
+}
+
+
+/* ====== Sección de Columnas Desplegables (Acordeón) ====== */
+
+/* Contenedor que agrupa las columnas */
+.dropdown-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Estilo de cada columna individual */
+.dropdown-column {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Efecto visual al pasar el mouse por encima */
+.dropdown-column:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Título de cada columna */
+.dropdown-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: 600;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Contenido que se oculta y muestra */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding-top: 0;
+}
+
+/* Cuando la columna está activa, se muestra el contenido */
+.dropdown-column.active .dropdown-content {
+  max-height: 1000px;
+  padding-top: 10px;
+}
+
+/* Lista dentro del contenido desplegable */
+.dropdown-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ítems de la lista */
+.dropdown-content li {
+  background: rgba(255, 255, 255, 0.85);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+/* ====== Ajustes para Móviles (Responsive) ====== */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .integrante-container {
+    flex-direction: column;
+  }
+  .integrante-content {
+    padding: 20px;
+  }
+  #tomas-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 15px auto; /* Esto centrará la imagen en móvil */
+  }
+  .dropdown-section {
+    flex-direction: column;
+  }
+  .side-by-side-wrapper {
+    flex-direction: column;
+  }
+}
+

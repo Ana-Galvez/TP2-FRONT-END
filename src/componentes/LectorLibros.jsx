@@ -1,4 +1,4 @@
-import "../assets/styles/TarjetaLibro.css";
+import "../assets/styles/tarjetaLibro.css";
 import { useState, useEffect } from "react";
 import TarjetaLibro from "./TarjetaLibro";
 import datosLibros from "../../public/data.json";

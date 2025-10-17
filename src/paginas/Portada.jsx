@@ -7,7 +7,6 @@ import virginiaImg from "../assets/vir.png";
 import "../assets/styles/portada.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ModoOscuro from "../componentes/ModoOscuro";
 import Sidebar from "../componentes/Sidebar";
 import HeaderPortadaBitacora from "../componentes/HeaderPortadaBitacora";
 import TarjetaIntegrante from "../componentes/TarjetaIntegrante";
@@ -24,16 +23,6 @@ const Portada = () => {
     "Tipografías de Google Fonts y estilos consistentes.",
   ];
   
-  // Estado del Modo
-  const [isDark, setIsDark] = useState(false);
-    const toggleTheme = () => {
-    setIsDark(prevIsDark => !prevIsDark);
-  };
-    const themeStyles = {
-    backgroundColor: isDark ? 'black' : 'white',
-    color: isDark ? 'white' : 'black',
-  };
-
   // Estado del filtro
   const [filtro, setFiltro] = useState("");
 
@@ -57,13 +46,8 @@ const Portada = () => {
   );
 
   return (
-    <div className={`portada-container ${isDark ? "dark-mode" : ""}`}>
+    <div className="portada-container">
       <Sidebar />
-      {/* <div className="main-content">
-        <div className="top-bar">
-         <ModoOscuro toggleTheme={toggleTheme} isDark={isDark}/>
-        </div>
-      </div> */}
       <div className="content-sections">
       <div className="header-portada-bitacora">
       <HeaderPortadaBitacora

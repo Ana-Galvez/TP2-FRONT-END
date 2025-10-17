@@ -26,6 +26,11 @@
   margin: 6px 0;
 }
 
+.email{
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
 /* ✨ Icono del título */
 .tarjeta-libro p:first-child {
   font-size: 1.5rem;
@@ -43,13 +48,13 @@
 
 @media (max-width: 900px) {
   .tarjeta-libro {
-    width: 45%;
+    width: 30%;
   }
 }
 
 @media (max-width: 400px) {
   .tarjeta-libro {
-    width: 100%;
+    width: 30%;
     font-size: 0.8rem;
   }
 }
