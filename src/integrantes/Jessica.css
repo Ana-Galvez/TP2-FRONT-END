@@ -73,3 +73,15 @@
   font-weight: 600;
   border-radius: 8px;
 }
+
+@media (max-width: 900px) {
+  .quote{
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .quote{
+    width: 80%;
+  }
+} 

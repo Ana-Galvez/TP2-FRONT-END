@@ -1,7 +1,7 @@
 import imagen from "../assets/icon-github.png";
 import alvaroImg from "../assets/alvaro.png";
 import anaImg from "../assets/ana.PNG";
-import jessicaImg from "../assets/jes.png";
+import jessicaImg from "../assets/jessica.png";
 import tomasImg from "../assets/tomas.png";
 import virginiaImg from "../assets/vir.png";
 import "../assets/styles/portada.css";
