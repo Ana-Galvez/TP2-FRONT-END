@@ -5,7 +5,7 @@ import HeaderIntegrantes from "../componentes/HeaderIntegrantes";
 import SobreMi from "../componentes/SobreMi";
 import MostrarOcultar from "../componentes/MostrarOcultar";
 import Footer from "../componentes/Footer";
-import imgJessica from "../assets/jes.png";
+import imgJessica from "../assets/jessica.png";
 import "../assets/styles/jessica.css";
 
 const Jessica = () => {
